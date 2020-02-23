@@ -48,6 +48,22 @@ while darthVader:
 fruits = ["apple", "peach", "watermelon"]
 for i in fruits:
     print("Me gusta comer:", i)
+
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+from_2_to_6 = numbers[2:7]
+print(from_2_to_6)
+greater_than_4 = numbers[5:]
+print(greater_than_4)
+print("los pares son ", numbers[::2])
+print("los impares son ", numbers[1::2])
+
+#diccionarios
+fighterD = {"name": "chuck", "last_name": "norris", "tecnique":"Karate"}
+#para acceder usar siempre "get" ya que si da error con "get" no PETA
+print(fighterD["name"]) #esta no usar<
+print(fighterD.get("name"))
+
+
 ganador = fight("paco", "pepe")
 print(" el luchador que ha ganado es: {}\n".format(fight("paco", "pepe")))
 #otra formas
